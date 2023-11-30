@@ -35,12 +35,18 @@
         <ul>
           <li> git status: checks what branch i am currently on
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>git pull origin main ensures local branch is the same as the remote</li>
-          <li>git add -A adds whatever changes were made to the local repository</li>
-          <li>git status can confirm that add -A has successfully tracked files that were created</li>
-          <li>git commit -m establishes intent to commit a change to the remote repository, a message can be added too</li>
-          <li>git push origin [branch name] essentially adds a branch to the remote repo</li>
-          <li>this is a test to confirm i can push changes</li>
+          <li>To push a change into a remote repository
+            <ol>
+<li>git status to check what branch</li>
+<li>git checkout -b feature/xxx to create new branch to work on</li>
+<li>git status to confirm on the new branch</li>
+<li>git add -A to add the modifications made to the new branch</li>
+<li>git commit -m "message here" to commit this changes to the branch and adding a message to tag what was done</li>
+<li>git pull origin main to update the main branch on the local repo with the source in the remote repo</li>
+git push origin feature/xxx to push the changes in the feature branch to the origin
+<li>go on Github to create and merge pull request</li>
+          </ol></li>
+
         </ul>
       </section>
    
