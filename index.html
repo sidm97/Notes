@@ -26,7 +26,7 @@
         <h2>CSS</h2>
         <ul>
           <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we ant around the content inside an element</li>
+          <li>A padding indicates how much space we want around the content inside an element</li>
         </ul>
       </section>
    
@@ -34,12 +34,14 @@
         <h2>Git</h2>
         <ul>
           <li> Process to push a branch change back to remote repository</li>
-            <ol>   <li>git status: checks what branch i am currently on</li>
+          
+            <ol>   
+              <li>git pull origin main ensures that the latest version of the repository is in the local directory before pushing a change back into the remote repo</li>
+              <li>git status: checks what branch i am currently on</li>
            <li>git checkout -b branch-name: creates a new branch and switches to it</li> 
             <li>git status: checks what untracked changes have been made on new branch</li>
-            <li>git add -A commits changes made to the new branch, tracking them</li>
-            <li>git commit -m "" adds a message as a reminder as to what changes were made</li>
-            <li>git pull origin main ensures that the latest version of the repository is in the local directory before pushing a change back into the remote repo</li>
+            <li>git add -A lists changes made to a branch waiting for commit, tracking them</li>
+            <li>git commit -m "" commits changes and adds a message as a reminder as to what changes were made</li>
             <li>git push origin branch-name creates the new branch in the remote repo, allowing a pull request to be created on github</li>
             </ol> 
         </ul>
